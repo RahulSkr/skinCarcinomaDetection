@@ -17,8 +17,8 @@ To train the model use the "training_model.py" file. We found the best kernel si
 To obtain the performance scores of the model one may use our "performance_viz.py" file, which includes methods to visualiza the confusion matrix. One may use keras-vis to visualize the grad-CAMs for the convolution layers. We also provide a method to plot the ROC curves for the model.
 
 # Requirements
-Keras(v2.2.2)
-tensorflow(v1.9.0)
-keras-vis(v0.4.1)(optional-depends on user)
-scikit-learn(v0.19.2)
-mlxtend(v0.13.0)
+Keras(v2.2.2)  
+tensorflow(v1.9.0)  
+keras-vis(v0.4.1)(optional-depends on user)  
+scikit-learn(v0.19.2)  
+mlxtend(v0.13.0)  
