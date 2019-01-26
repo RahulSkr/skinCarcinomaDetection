@@ -2,7 +2,7 @@
 A deep neural network developed following the residual learning and separable convolution paradigms to diagnose basal and squamous cell carcinoma using a subset of ISIC dataset. The network has been designed using the Keras framework.
 
 # Dataset used for model development
-The dataset used for this project can be found within the "dataset" folder. This dataset is a subset of the ISIC archive data.
+The dataset used for this project can be found within the "data_resized" folder in compressed format. This dataset is a subset of the ISIC archive data.
 
 # Data preprocessing
 The image data has already been resized to 224 x 224 dimensions. However, we apply further preprocessing steps which can be implemented using the "preprocessing.py" file.
