@@ -69,7 +69,7 @@ def plot_roc_curve(model, X, y, weight_path, save_file, x_plotlim = None, y_plot
     plt.show()
     if not os.path.exists('visualization'):
         os.makedirs('visualization')
-    fig.savefig("visualization/"+save_file+".png", transparent=True, dpi=5*fig.dpi)
+    fig.savefig(os.path.join("visualization",save_file+".png"), transparent=True, dpi=5*fig.dpi)
 
 ####Plotting confusion matrix####
 def plot_conf_mat(model, X, y, weight_path, save_file):
@@ -79,5 +79,7 @@ def plot_conf_mat(model, X, y, weight_path, save_file):
 
     confmat = confusion_matrix(y_true_labels, y_pred_labels)
     fig, _ = plot_confusion_matrix(conf_mat= confmat, figsize=(15,15))
-    fig.savefig("visualization/"+save_file+".png", transparent=True, dpi=5*fig.dpi)
+    if not os.path.exists('visualization'):
+        os.makedirs('visualization')
+    fig.savefig(os.path.join("visualization",save_file+".png"), transparent=True, dpi=5*fig.dpi)
     plt.show()
